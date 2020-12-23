@@ -1,0 +1,13 @@
+extends master.pug
+block content
+   .back__grey
+      .container
+         .row
+            .col-9
+               include pages/home/banner.pug
+               include pages/home/hot-news.pug
+               include pages/home/select-class.pug
+               include pages/home/category.pug
+               include pages/home/about.pug
+            .col-3
+               include components/advertise.pug

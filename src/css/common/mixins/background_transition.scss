@@ -1,0 +1,25 @@
+@mixin skew-background-transition($initial, $hover, $inverted: false) {
+  background: linear-gradient(90deg,
+      $hover 0%,
+      $hover 50%,
+      $initial 50%,
+      $initial 100%);
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+
+  background-position: right bottom;
+
+  @if $inverted {
+    background-position: left bottom;
+  }
+
+  transition: background-position 0.25s ease-out;
+
+  &:hover {
+    background-position: left bottom;
+
+    @if $inverted {
+      background-position: right bottom;
+    }
+  }
+}

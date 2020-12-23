@@ -1,0 +1,21 @@
+html {
+    font-family: 'Livvic', sans-serif;
+    background-color: #E5E5E5;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input,
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+.back__grey {
+    background-color: #E5E5E5 !important;
+}
