@@ -29,6 +29,9 @@
             color: #FFFFFF;
             text-align: center;
             width: 100%;
+            @include max-breakpoint(426) {
+                font-size: 15px;
+            }
         }
     }
 }

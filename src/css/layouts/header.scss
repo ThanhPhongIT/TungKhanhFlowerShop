@@ -1,20 +1,46 @@
 .header {
+    @include max-breakpoint(991) {
+        position: relative;
+    }
     .header__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 40px 0;
+        @include max-breakpoint(991) {
+            flex-direction: column;
+        }
+        @include max-breakpoint(426) {
+            align-items: center;
+            padding: 10px 0;
+        }
         .header-logo {
             display: flex;
             align-items: center;
+            @include max-breakpoint(991) {
+                margin-bottom: 20px;
+            }
             .flower-logo {
                 margin-right: 20px;
+                @include max-breakpoint(426) {
+                    margin-right: 0px;
+                    display: flex;
+                    justify-content: center;
+                }
+                img {
+                    @include max-breakpoint(426) {
+                        width: 65%;
+                    }
+                }
             }
             .name-logo {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 img {
+                    @include max-breakpoint(426) {
+                        width: 60%;
+                    }
                     &:nth-child(1) {
                         margin-bottom: 15px;
                     }
@@ -36,6 +62,9 @@
                     font-size: 20px;
                     line-height: 23px;
                     color: #424242;
+                    @include max-breakpoint(426) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -43,10 +72,21 @@
     .header__bottom {
         display: flex;
         align-items: center;
+        @include max-breakpoint(991) {
+            justify-content: space-between;
+        }
         .header-menu {
             display: flex;
             align-items: center;
+            @include max-breakpoint(991) {
+                display: none;
+            }
+            min-height: 40px;
             .menu-item {
+                @include max-breakpoint(991) {
+                    width: 100%;
+                    border-top: 0.5px solid #fff;
+                }
                 a {
                     text-transform: uppercase;
                     font-style: normal;
@@ -55,11 +95,41 @@
                     line-height: 21px;
                     color: #FFFFFF;
                     padding: 20px 25px 20px 0;
+                    @include max-breakpoint(1025) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .show {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            background: #78B004;
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            align-items: flex-start;
+            z-index: 100;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu-button {
+            @include min-breakpoint(992) {
+                display: none;
+            }
+            @include max-breakpoint(991) {
+                display: block;
+                i {
+                    font-size: 30px;
+                    color: #FFFFFF;
                 }
             }
         }
         .header-search {
             margin-left: 30px;
+            padding: 20px 0;
         }
     }
 }

@@ -1,15 +1,32 @@
 .cart-content {
+    .destop {
+        display: table;
+        @include max-breakpoint(769) {
+            display: none;
+        }
+    }
+    .mobile {
+        display: none;
+        @include max-breakpoint(769) {
+            display: table;
+        }
+    }
     .mh {
         min-height: 600px;
     }
     .bread-crum {
-        p {
+        display: flex;
+        a {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 40px;
             color: #8D8D8D;
             padding: 30px 0;
+            padding-right: 10px;
+            @include max-breakpoint(426) {
+                font-size: 13px;
+            }
         }
     }
     .table-product {
@@ -24,11 +41,41 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 30px;
+            @include max-breakpoint(769) {
+                font-size: 13px;
+            }
         }
         .row-product {
             padding: 10px 0;
             img {
                 cursor: pointer;
+            }
+            .avatar-product {
+                img {
+                    @include max-breakpoint(769) {
+                        width: 60px;
+                        height: 70px;
+                    }
+                }
+            }
+            .description {
+                @include max-breakpoint(769) {
+                    font-size: 13px;
+                }
+            }
+            .cost {
+                p {
+                    @include max-breakpoint(769) {
+                        font-size: 13px;
+                    }
+                }
+                img {
+                    @include max-breakpoint(769) {
+                        margin: auto;
+                        margin-top: 10px;
+                        display: flex;
+                    }
+                }
             }
             td:nth-child(2) {
                 img {
@@ -41,6 +88,9 @@
                 .count-product {
                     display: flex;
                     align-items: center;
+                    @include max-breakpoint(769) {
+                        margin-top: 10px;
+                    }
                     .qty-count {
                         width: 30px;
                         height: 30px;
@@ -48,6 +98,11 @@
                         box-sizing: border-box;
                         background-color: transparent;
                         font-size: 25px;
+                        @include max-breakpoint(769) {
+                            width: 25px;
+                            height: 25px;
+                            font-size: 20px;
+                        }
                     }
                     input {
                         width: 40px;
@@ -60,6 +115,12 @@
                         line-height: 29px;
                         color: #111111;
                         text-align: center;
+                        @include max-breakpoint(769) {
+                            width: 30px;
+                            height: 25px;
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
                     }
                 }
             }
@@ -67,6 +128,9 @@
     }
     .bl {
         border-left: 0.5px solid #C4C4C4;
+        @include max-breakpoint(991) {
+            border: none;
+        }
     }
     .total-money {
         .title-total {
@@ -96,6 +160,9 @@
                 font-size: 16px;
                 line-height: 30px;
                 color: #121212;
+                @include max-breakpoint(426) {
+                    font-size: 14px;
+                }
             }
             p:nth-child(2) {
                 font-style: normal;
@@ -103,6 +170,9 @@
                 font-size: 18px;
                 line-height: 30px;
                 color: #DC1D58;
+                @include max-breakpoint(426) {
+                    font-size: 14px;
+                }
             }
         }
         .total {
@@ -113,6 +183,9 @@
                 font-size: 16px;
                 line-height: 30px;
                 color: #121212;
+                @include max-breakpoint(426) {
+                    font-size: 14px;
+                }
             }
             p:nth-child(2) {
                 font-style: normal;
@@ -120,6 +193,9 @@
                 font-size: 20px;
                 line-height: 30px;
                 color: #DC1D58;
+                @include max-breakpoint(426) {
+                    font-size: 14px;
+                }
             }
         }
         .button-pay {
@@ -129,12 +205,18 @@
             border-radius: 10px;
             justify-content: center;
             margin-top: 20px;
+            @include max-breakpoint(1025) {
+                width: 300px;
+            }
             a {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 21px;
                 display: flex;
+                @include max-breakpoint(426) {
+                    font-size: 14px;
+                }
                 align-items: center;
                 color: #FFFFFF;
             }

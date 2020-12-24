@@ -1,12 +1,17 @@
 .list-content {
     .bread-crum {
-        p {
+        display: flex;
+        a {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: 40px;
             color: #8D8D8D;
             padding: 30px 0;
+            padding-right: 10px;
+            @include max-breakpoint(426) {
+                font-size: 13px;
+            }
         }
     }
     .items-product {
@@ -14,14 +19,6 @@
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            a {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 21px;
-                text-decoration-line: underline;
-                color: #78B004;
-            }
             .title {
                 font-style: normal;
                 font-weight: 500;
@@ -31,6 +28,9 @@
                 position: relative;
                 padding: 10px 0;
                 text-transform: uppercase;
+                @include max-breakpoint(426) {
+                    font-size: 16px;
+                }
                 &::after {
                     content: '';
                     position: absolute;
@@ -58,6 +58,9 @@
                     font-size: 18px;
                     line-height: 23px;
                     color: #111111;
+                    @include max-breakpoint(426) {
+                        font-size: 12px;
+                    }
                 }
                 .price {
                     font-style: normal;
@@ -65,6 +68,9 @@
                     font-size: 21px;
                     line-height: 29px;
                     color: #AC0404;
+                    @include max-breakpoint(426) {
+                        font-size: 16px;
+                    }
                 }
             }
         }

@@ -1,10 +1,11 @@
 .cart-content
     .container
         .bread-crum
-            p Trang chủ / Giỏ hàng
+            a(href="./index.html") Trang chủ / 
+            a(href="./cart.html") Giỏ hàng 
         .row.mb-5.mh
-            .col-md-8.col-sm-12
-                table.table-product(width="100%").table.table-striped
+            .col-lg-8.col-12
+                table.table-product(width="100%").table.table-striped.destop
                     tr  
                         th 
                         th Sản phẩm
@@ -23,7 +24,24 @@
                                 input.product-qty(type="text" name="product-qty" min="0" value="1")
                                 button.qty-count.qty-count--add(data-action="add") +
                         td 4.000.000 vnđ
-            .col-md-4.col-sm-12.bl
+                table.table-product(width="100%").table.table-striped.mobile
+                    tr  
+                        th Sản phẩm
+                        th Giá
+                        th Tạm tính
+                    tr.row-product
+                        td.avatar-product
+                            img(src="./images/cart.png", alt="")
+                        td.description
+                            p Hoa dâu tây - Size 100 quả
+                            .count-product.qty-input
+                                button.qty-count.qty-count--minus(data-action="minus") -
+                                input.product-qty(type="text" name="product-qty" min="0" value="1")
+                                button.qty-count.qty-count--add(data-action="add") +
+                        td.cost 
+                            p 4.000.000 vnđ
+                            img(src="./images/home/delete.svg", alt="delete")
+            .col-lg-4.col-12.bl
                 .total-money
                     .title-total CỘNG GIỎ HÀNG
                     .temporary-value

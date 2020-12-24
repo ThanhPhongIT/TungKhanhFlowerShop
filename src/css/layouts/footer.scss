@@ -37,6 +37,9 @@
              font-size: 18px;
              line-height: 21px;
              color: #FFFFFF;
+             @include max-breakpoint(426) {
+                 font-size: 15px;
+             }
          }
          a {
              display: flex;
@@ -55,6 +58,9 @@
              line-height: 21px;
              color: #FFFFFF;
              padding-bottom: 20px;
+             @include max-breakpoint(426) {
+                 font-size: 15px;
+             }
          }
      }
  }

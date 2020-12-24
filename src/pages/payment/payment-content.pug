@@ -1,9 +1,11 @@
 .payment-content
     .container
         .bread-crum
-            p Trang chủ / Giỏ hàng / Thông tin thanh toán
+            a(href="./index.html") Trang chủ / 
+            a(href="./cart.html") Giỏ hàng /
+            a(href="./payment.html") Thông tin thanh toán
         .row.mh
-            .col-md-8.col-12
+            .col-lg-8.col-12
                 .infor-payment
                     p.title-infor THÔNG TIN THANH TOÁN
                     lable(for="name") Họ và tên
@@ -19,7 +21,7 @@
                         p Ghi chú về đơn hàng này(tùy chọn)
                     textarea#note(type="text" name="note" placeholder="Ghi chú về đơn hàng, ví dụ: Thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn")
 
-            .col-md-4.col-12.bl
+            .col-lg-4.col-12.bl
                 .your-order
                     p.title-order ĐƠN HÀNG CỦA BẠN
                     .heading

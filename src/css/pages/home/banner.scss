@@ -2,6 +2,8 @@
     img {
         width: 100%;
         padding: 20px 0;
+        min-height: 300px;
+        object-fit: cover;
     }
     p {
         padding: 20px;
@@ -11,5 +13,11 @@
         line-height: 40px;
         text-align: center;
         color: #111111;
+        @include max-breakpoint(426) {
+            font-size: 18px;
+        }
+        @include max-breakpoint(426) {
+            font-size: 15px;
+        }
     }
 }

@@ -38,18 +38,17 @@
               <li class="menu-item"><a href="./list-product.html">LIÊN HỆ</a></li>
             </ul>
             <div class="header-search"><img src="./images/home/search.svg" alt=""></div>
+            <div class="menu-button"><i class="fa fa-bars"></i></div>
           </div>
         </div>
       </div>
     </div>
     <div class="cart-content">
       <div class="container">
-        <div class="bread-crum">
-          <p>Trang chủ / Giỏ hàng</p>
-        </div>
+        <div class="bread-crum"><a href="./index.html">Trang chủ / </a><a href="./cart.html">Giỏ hàng </a></div>
         <div class="row mb-5 mh">
-          <div class="col-md-8 col-sm-12">
-            <table class="table-product table table-striped" width="100%">
+          <div class="col-lg-8 col-12">
+            <table class="table-product table table-striped destop" width="100%">
               <tr> 
                 <th> </th>
                 <th>Sản phẩm</th>
@@ -71,8 +70,29 @@
                 <td>4.000.000 vnđ</td>
               </tr>
             </table>
+            <table class="table-product table table-striped mobile" width="100%">
+              <tr> 
+                <th>Sản phẩm</th>
+                <th>Giá</th>
+                <th>Tạm tính</th>
+              </tr>
+              <tr class="row-product">
+                <td class="avatar-product"><img src="./images/cart.png" alt=""></td>
+                <td class="description">
+                  <p>Hoa dâu tây - Size 100 quả</p>
+                  <div class="count-product qty-input">
+                    <button class="qty-count qty-count--minus" data-action="minus">-</button>
+                    <input class="product-qty" type="text" name="product-qty" min="0" value="1">
+                    <button class="qty-count qty-count--add" data-action="add">+</button>
+                  </div>
+                </td>
+                <td class="cost"> 
+                  <p>4.000.000 vnđ</p><img src="./images/home/delete.svg" alt="delete">
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="col-md-4 col-sm-12 bl">
+          <div class="col-lg-4 col-12 bl">
             <div class="total-money">
               <div class="title-total">CỘNG GIỎ HÀNG</div>
               <div class="temporary-value">
@@ -104,7 +124,7 @@
               </div></a></div>
           <div class="col-10 m-auto">
             <div class="row mt-5 mb-5">
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="infor-footer">
                   <p class="title">Thông tin liên hệ</p><a class="phone-footer" href="#"><img src="./images/footer/phone.svg" alt="">
                     <p>039 456 2868</p></a><a class="address" href="#"><img src="./images/home/map.svg" alt="">
@@ -112,7 +132,7 @@
                   <div class="icons"><a href="#"><img src="./imgaes/home/facebook.svg" alt=""></a><a href="#"><img src="./imgaes/home/zalo.svg" alt=""></a></div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <div class="infor-payment">
                   <p>Thông Tin Thanh Toán</p>
                   <p>NGÂN HÀNG VIETCOMBANK CN BÌNH DƯƠNG</p>
