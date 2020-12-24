@@ -1,0 +1,49 @@
+.payment-content
+    .container
+        .bread-crum
+            p Trang chủ / Giỏ hàng / Thông tin thanh toán
+        .row.mh
+            .col-md-8.col-12
+                .infor-payment
+                    p.title-infor THÔNG TIN THANH TOÁN
+                    lable(for="name") Họ và tên
+                    input#name(type="text" name="name" placeholder="Họ và tên")
+                    lable(for="email") Địa chỉ mail
+                    input#email(type="email" name="email" placeholder="Nhập email")
+                    lable(for="phone") Số điện thoại
+                    input#phone(type="text" name="phone" placeholder="Nhập SĐT")
+                    lable(for="address") Địa chỉ
+                    input#address.address(type="text" name="address" placeholder="Nhập địa chỉ")
+                    lable(for="note").note
+                        p Thông tin bổ sung
+                        p Ghi chú về đơn hàng này(tùy chọn)
+                    textarea#note(type="text" name="note" placeholder="Ghi chú về đơn hàng, ví dụ: Thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn")
+
+            .col-md-4.col-12.bl
+                .your-order
+                    p.title-order ĐƠN HÀNG CỦA BẠN
+                    .heading
+                        p Sản Phẩm
+                        p Tạm Tính
+                    .product
+                        p Hoa dâu tây 
+                        p 4.000.000 vnđ
+                    .temporary-value
+                        p Tạm tính
+                        p 4.000.000 vnđ
+                    .total
+                        p TỔNG
+                        p 4.000.000 vnđ
+                    .select-method
+                        .cash
+                            label.custom Trả tiền mặt khi nhận hàng
+                                input#cash(type="radio" name="method" value="cash" checked="checked")
+                                span.checkmark
+                            
+                        .creadit
+                            label.custom Chuyển khoản ngân hàng
+                                input#credit(type="radio" name="method" value="creadit")
+                                span.checkmark
+                            
+                    .button-order
+                        a(href="#") ĐẶT HÀNG

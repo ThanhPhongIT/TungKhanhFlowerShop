@@ -1,0 +1,41 @@
+.cart-content
+    .container
+        .bread-crum
+            p Trang chủ / Giỏ hàng
+        .row.mb-5.mh
+            .col-md-8.col-sm-12
+                table.table-product(width="100%").table.table-striped
+                    tr  
+                        th 
+                        th Sản phẩm
+                        th Giá
+                        th Số lượng
+                        th Tạm tính
+                    tr.row-product
+                        td(style="padding-left:25px;")
+                            img(src="./images/home/delete.svg", alt="delete")
+                        td
+                            img(src="./images/cart.png", alt="")
+                        td Hoa dâu tây - Size 100 quả
+                        td 
+                            .count-product.qty-input
+                                button.qty-count.qty-count--minus(data-action="minus") -
+                                input.product-qty(type="text" name="product-qty" min="0" value="1")
+                                button.qty-count.qty-count--add(data-action="add") +
+                        td 4.000.000 vnđ
+            .col-md-4.col-sm-12.bl
+                .total-money
+                    .title-total CỘNG GIỎ HÀNG
+                    .temporary-value
+                        p Tạm tính
+                        p 4.000.000 vnđ
+                    .ship
+                        p Phi ship
+                        p 0 vnđ
+                    .total
+                        p TỔNG:
+                        p 4.000.000 vnđ
+                    .button-pay
+                        a(href="./payment.html") TIẾN HÀNH THANH TOÁN
+
+            

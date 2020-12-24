@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous">
@@ -13,226 +14,570 @@
   </head>
   <body>
     <div class="header">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="header__logo"><a href="../index.html"><img src="../images/home/header-logo.svg" alt="logo"></a></div>
-        <div class="header__search d-flex align-items-center">
-          <div class="search__input">
-            <input type="text">
-            <div class="icon_search">
-              <button><img src="../images/icons/search.svg" alt=""></button>
-            </div>
-          </div>
-          <div class="login d-flex align-items-center">
-            <button>Đăng nhập</button>
-            <button>Đăng kí</button>
+      <div class="container">
+        <div class="header__top"><a class="header-logo" href="./index.html">
+            <div class="flower-logo"><img src="./images/home/header-logo.svg" alt=""></div>
+            <div class="name-logo"><img src="./images/home/shopname.svg" alt=""><img src="./images/home/flowershop.svg" alt=""></div></a>
+          <div class="header-infor"><a class="phone-header" href="#"><img src="./images/home/phone.svg" alt="">
+              <p>039 456 2868</p></a><a class="cart-header" href="#"><img src="./images/home/cart.svg" alt="">
+              <p>Giỏ hàng</p></a></div>
+        </div>
+      </div>
+      <div class="container-fluid back-green">
+        <div class="container">
+          <div class="header__bottom">
+            <ul class="header-menu">
+              <li class="menu-item"><a href="./index.html">Trang chủ</a></li>
+              <li class="menu-item"><a href="./list-product.html">HOA SINH NHẬT</a></li>
+              <li class="menu-item"><a href="./list-product.html">CHỦ ĐỀ</a></li>
+              <li class="menu-item"><a href="./list-product.html">HOA TƯƠI</a></li>
+              <li class="menu-item"><a href="./list-product.html">MÀU SẮC</a></li>
+              <li class="menu-item"><a href="./list-product.html">HOA ĐẶC BIỆT</a></li>
+              <li class="menu-item"><a href="./list-product.html">HOA CƯỚI</a></li>
+              <li class="menu-item"><a href="./list-product.html">KIẾN THỨC</a></li>
+              <li class="menu-item"><a href="./list-product.html">LIÊN HỆ</a></li>
+            </ul>
+            <div class="header-search"><img src="./images/home/search.svg" alt=""></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="header__class">
-      <div class="container-fluid back__white"></div>
-      <div class="container">
-        <div class="menu d-flex"><a href="../class.html">
-            <div class="each__class">Lớp 1 - 2 - 3</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="second__content">
-                  <div class="row">
-                    <div class="col-5">
-                      <ul class="chuyenmuc">
-                        <li>Giải bài tập sách giáo khoa</li>
-                        <li>Giải sách bài tập, vở bài tập</li>
-                        <li>Đề kiểm tra, đề thi</li>
-                        <li>Lý thuyết</li>
-                        <li>Chuyên đề</li>
-                        <li>Bài giảng</li>
-                        <li>Giáo án</li>
-                      </ul>
-                    </div>
-                    <div class="col-7 chuyenmuc__con">
-                      <ul>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 4</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="second__content">
-                  <div class="row">
-                    <div class="col-4">
-                      <ul>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                      </ul>
-                    </div>
-                    <div class="col-8">
-                      <ul>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 5</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="second__content">
-                  <div class="row">
-                    <div class="col-4">
-                      <ul>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                      </ul>
-                    </div>
-                    <div class="col-8">
-                      <ul>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                        <li>abc</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 6</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 7</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 8</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 9</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 10</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 11</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../class.html">
-            <div class="each__class">Lớp 12</div>
-            <div class="menu__second">
-              <div class="container">
-                <div class="row">
-                  <div class="col-9"></div>
-                </div>
-              </div>
-            </div></a><a href="../question.html">
-            <div class="header__question">Hỏi đáp</div></a><a href="../library.html">
-            <div class="header__library">Thư viện</div></a></div>
+    <div class="banner">
+      <div class="container"><img src="./images/banner/banner.png" alt="">
+        <p>TÙNG KHÁNH Flower Shop là shop hoa tươi hoạt động nhiều năm kinh nghiệm trong ngành trang trí hoa sự kiện, đám cưới, sinh nhật, hoa tươi, hoa lan cho công ty, xí nghiệp...và các lĩnh vực liên quan tới hoa tươi</p>
       </div>
     </div>
-    <div class="back__grey">
+    <div class="category-product">
       <div class="container">
-        <div class="row">
-          <div class="col-9">
-            <div class="banner back__grey">
-              <p>banner</p>
-            </div>
-            <div class="hot__news back__grey">
-              <p>hot news</p>
-            </div>
-            <div class="class back__grey">
-              <p>select class</p>
-            </div>
-            <div class="category back__grey">
-              <p>category</p>
-            </div>
-            <div class="about back__grey">
-              <p>about</p>
-            </div>
-          </div>
-          <div class="col-3"><img class="advertise__img" src="../images/components/adv.png" alt="adv"></div>
+        <div class="row mb-3">
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/strawberry.png" alt="">
+              <div class="foot"></div>
+              <p>HOA DÂU TÂY</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/fresh.png" alt="">
+              <div class="foot"></div>
+              <p>HỘP HOA TƯƠI</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/flowers.png" alt="">
+              <div class="foot"></div>
+              <p>BÓ HOA TƯƠI</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/birthday.png" alt="">
+              <div class="foot"></div>
+              <p>HOA SINH NHẬT</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/wedding.png" alt="">
+              <div class="foot"></div>
+              <p>HOA ĐÁM CƯỚI</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/congratulate.png" alt="">
+              <div class="foot"></div>
+              <p>HOA CHÚC MỪNG</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/phonglan.png" alt="">
+              <div class="foot"></div>
+              <p>LAN HỒ ĐIỆP</p></a></div>
+          <div class="col-lg-3 col-md-4"><a class="items-ctg" href="./list-product.html"><img src="./images/list-product/rip.png" alt="">
+              <div class="foot"></div>
+              <p>HOA CHIA BUỒN</p></a></div>
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="list-product">
       <div class="container">
-        <div class="row">
-          <div class="col-md-5 col-12">
-            <div class="footer__left">
-              <p>Website lời giải cho tất cả các môn học trong chương trình học Tiểu Học, Trung Học Cơ Sở, Trung Học Phổ Thông </p>
-              <p><span>Email : </span><a href="">toploigiai@gmail.com</a></p>
-              <p><span>SĐT : </span><a href="">0123456789</a></p>
-              <div class="social__icons"><a href=""><img src="../images/icons/face.svg" alt=""></a><a href=""><img src="../images/icons/youtube.svg" alt=""></a></div>
-              <p>Điều khoản sử dụng</p>
+        <div class="hot-product">
+          <div class="heading">
+            <p class="title">SẢN PHẨM HOT</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-3 col-md-6">
+              <div class="item-product"><img src="./images/list-product/wedding.png" alt="">
+                <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-product"><img src="./images/list-product/birthday.png" alt="">
+                <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-product"><img src="./images/list-product/rip.png" alt="">
+                <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="item-product"><img src="./images/list-product/phonglan.png" alt="">
+                <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+              </div>
             </div>
           </div>
-          <div class="col-md-7 col-12">
-            <div class="footer__right"><a href=""> <img src="../images/home/header-logo.svg" alt=""></a>
-              <div class="classes">
-                <div class="row">
-                  <div class="col-3"><a href="">Lớp 1-2-3</a></div>
-                  <div class="col-3"><a href="">Lớp 4</a></div>
-                  <div class="col-3"><a href="">Lớp 5</a></div>
-                  <div class="col-3"><a href="">Lớp 6</a></div>
-                  <div class="col-3"><a href="">Lớp 7</a></div>
-                  <div class="col-3"><a href="">Lớp 8</a></div>
-                  <div class="col-3"><a href="">Lớp 9</a></div>
-                  <div class="col-3"><a href="">Lớp 10</a></div>
-                  <div class="col-3"><a href="">Lớp 11</a></div>
-                  <div class="col-3"><a href="">Lớp 12</a></div>
-                  <div class="col-3"><a href="">Hỏi đáp</a></div>
-                  <div class="col-3"><a href="">Thư viện</a></div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HOA DÂU TÂY</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5 mb-3">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/strawberry.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HỘP HOA TƯƠI</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/fresh.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">BÓ HOA TƯƠI</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/flowers.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HOA SINH NHẬT</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/birthday.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HOA ĐÁM CƯỚI</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/wedding.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HOA CHÚC MỪNG</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/congratulate.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">LAN HỒ ĐIỆP</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/phonglan.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="category-flower">
+          <div class="heading">
+            <p class="title">HOA CHIA BUỒN</p><a href="./list-product.html">Xem thêm</a>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-4 col-md-12">
+              <div class="avatar"><img src="./images/list-category/rip.png" alt=""></div>
+            </div>
+            <div class="col-lg-8 col-md-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/birthday.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/wedding.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="items-product"><img src="./images/list-product/phonglan.png" alt="">
+                    <div class="infor"><a class="name" href="#"> Hoa cưới để bàn cô dâu</a><a class="price" href="#">1.500.000 vnđ</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="js/main.js"></script>
+    <div class="footer back-green"> 
+      <div class="container">
+        <div class="row"> 
+          <div class="col-10 m-auto"> <a class="logo-footer" href="#">
+              <div class="flower-footer"><img src="./images/footer/flower-footer.svg" alt=""></div>
+              <div class="name-footer">
+                <div class="name-logo"><img src="./images/footer/shopname-footer.svg" alt=""></div>
+                <div class="shop-flower"><img src="./images/footer/flowershop-footer.svg" alt=""></div>
+              </div></a></div>
+          <div class="col-10 m-auto">
+            <div class="row mt-5 mb-5">
+              <div class="col-6">
+                <div class="infor-footer">
+                  <p class="title">Thông tin liên hệ</p><a class="phone-footer" href="#"><img src="./images/footer/phone.svg" alt="">
+                    <p>039 456 2868</p></a><a class="address" href="#"><img src="./images/home/map.svg" alt="">
+                    <p>Khu Công Nghiệp Bàu Bàng - Bình Dương</p></a>
+                  <div class="icons"><a href="#"><img src="./imgaes/home/facebook.svg" alt=""></a><a href="#"><img src="./imgaes/home/zalo.svg" alt=""></a></div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="infor-payment">
+                  <p>Thông Tin Thanh Toán</p>
+                  <p>NGÂN HÀNG VIETCOMBANK CN BÌNH DƯƠNG</p>
+                  <p>STK: 00000000097</p>
+                  <p>CHỦ TK: Trần Thi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

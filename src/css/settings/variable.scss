@@ -1,9 +1,10 @@
 html {
-    font-family: 'Livvic', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
 }
 
 a {
+    display: block;
     &:hover {
         text-decoration: none;
     }
@@ -16,6 +17,14 @@ button {
     }
 }
 
-.back__grey {
-    background-color: #E5E5E5 !important;
+input,
+textarea,
+button {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    resize: none;
+}
+
+.back-green {
+    background-color: #78B004 !important;
 }
