@@ -187,7 +187,7 @@ button {
     color: #78B004; }
     @media only screen and (max-width: 426px) {
       .list-product .hot-product .heading a {
-        font-size: 16px; } }
+        font-size: 15px; } }
   .list-product .hot-product .heading .title {
     font-style: normal;
     font-weight: 500;
@@ -199,7 +199,7 @@ button {
     text-transform: uppercase; }
     @media only screen and (max-width: 426px) {
       .list-product .hot-product .heading .title {
-        font-size: 16px; } }
+        font-size: 15px; } }
     .list-product .hot-product .heading .title::after {
       content: '';
       position: absolute;
@@ -209,6 +209,9 @@ button {
       border-radius: 3px;
       width: 200px;
       height: 4px; }
+      @media only screen and (max-width: 426px) {
+        .list-product .hot-product .heading .title::after {
+          width: 150px; } }
 
 .list-product .hot-product .item-product {
   border: 1px solid #78B004;

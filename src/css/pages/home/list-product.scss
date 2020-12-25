@@ -12,7 +12,7 @@
                 text-decoration-line: underline;
                 color: #78B004;
                 @include max-breakpoint(426) {
-                    font-size: 16px;
+                    font-size: 15px;
                 }
             }
             .title {
@@ -25,7 +25,7 @@
                 padding: 10px 0;
                 text-transform: uppercase;
                 @include max-breakpoint(426) {
-                    font-size: 16px;
+                    font-size: 15px;
                 }
                 &::after {
                     content: '';
@@ -36,6 +36,9 @@
                     border-radius: 3px;
                     width: 200px;
                     height: 4px;
+                    @include max-breakpoint(426) {
+                        width: 150px;
+                    }
                 }
             }
         }
